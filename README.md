@@ -9,3 +9,4 @@
 *	[Homebrew](http://brew.sh/) and [Caskroom](http://caskroom.io/) for Mac
 *	[Boxstarter to setup Windows](http://boxstarter.org/)
 *	[osxc to setup Macs using ansible](http://osxc.github.io/)
+* [boxen for OS X](https://github.com/cegeka/portable-development-workstations)
