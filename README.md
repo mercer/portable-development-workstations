@@ -17,27 +17,20 @@ Because a developer shouldn't need hours to set up their development machines.
 
 ### Vagrant vm with desktop strong points
 * version is fixed, and up to date (to the version of the box)
+* exact same vm runs on all machines
+* throw away-able vm instance (when broke, when dirty, when starting a new story)
 
 ### Vagrant vm with desktop pitfalls
-
-### Base box
-https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome
+* there is some delay because the environemen
 
 ## Next steps / Ideas
-* make a vagrant box with stuff already installed
+* (done) make a vagrant box with stuff already installed
+* install more apps (eclipse, intellij idea, microsoft code, maven with dependencies, jdk, sublime, sql developer, soap ui)
+* capture configuration (dotfiles?)
 
-## TODO
-* have a desktop environment with vagrant
-* provision steps
-** system setup
-** dotfiles
-** apps
-
-## FIXME
-* login automatically -> start once
-* remove duplication in Vagrantfile
-
-
+## Base box
+* To make a base box ```vagrant package --base portable-development-workstations_gnome_1434462355968_98708```
+* https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome
 
 ## Interesting links
 
@@ -55,3 +48,4 @@ https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome
 * http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
 * https://stackoverflow.com/questions/18878117/using-vagrant-to-run-virtual-machines-with-desktop-environment
 * http://portalstack.blogspot.be/2013/11/vagrant-virtualbox-ubuntu-for-linux.html
+
