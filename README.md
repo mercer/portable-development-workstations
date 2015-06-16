@@ -21,7 +21,7 @@ Because a developer shouldn't need hours to set up their development machines.
 * throw away-able vm instance (when broke, when dirty, when starting a new story)
 
 ### Vagrant vm with desktop pitfalls
-* there is some delay because the environemen
+* there is some delay because of the virtual environment
 
 ## Next steps / Ideas
 * (done) make a vagrant box with stuff already installed
@@ -36,8 +36,8 @@ Because a developer shouldn't need hours to set up their development machines.
 To make a base box 
 * vagrant up
 * ```VBoxManage list vms``` to list running vms
-* create the package for the appropiate ```vagrant package --base portable-development-workstations_gnome_1434462355968_98708```
-* https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome
+* create the package for the appropiate vm, such as ```vagrant package --base portable-development-workstations_gnome_1434462355968_98708```
+* go to https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome, upload the new box and increase the version
 
 ## Interesting links
 
