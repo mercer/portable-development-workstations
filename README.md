@@ -5,7 +5,7 @@
 Because a developer shouldn't need hours to set up their development machines.
 
 ## Requirements
-* I should be able to restore my dev environment withing 5 minutes
+* I should be able to restore my development environment withing 5 minutes
 * I should have a similar ux with a containerized app as with the native app
 * I should be able to access my files
 * I should have a way to save settings and share them with my team mates
@@ -28,8 +28,15 @@ Because a developer shouldn't need hours to set up their development machines.
 * install more apps (eclipse, intellij idea, microsoft code, maven with dependencies, jdk, sublime, sql developer, soap ui)
 * capture configuration (dotfiles?)
 
-## Base box
-* To make a base box ```vagrant package --base portable-development-workstations_gnome_1434462355968_98708```
+## FIXME
+* vagrant up asks for password
+* another developer's laptop doesn't have initial private key of the box
+
+## Creating/updating the base box
+To make a base box 
+* vagrant up
+* ```VBoxManage list vms``` to list running vms
+* create the package for the appropiate ```vagrant package --base portable-development-workstations_gnome_1434462355968_98708```
 * https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome
 
 ## Interesting links
