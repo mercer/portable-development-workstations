@@ -38,6 +38,7 @@ To make a base box
 * ```VBoxManage list vms``` to list running vms
 * create the package for the appropiate vm, such as ```vagrant package --base portable-development-workstations_gnome_1434462355968_98708```
 * go to https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome, upload the new box and increase the version
+* careful with the known issue https://github.com/mitchellh/vagrant/issues/5059
 
 ## Interesting links
 
