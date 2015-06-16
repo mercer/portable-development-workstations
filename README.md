@@ -9,27 +9,32 @@ Because a developer shouldn't need hours to set up their development machines.
 * I should have a similar ux with a containerized app as with the native app
 * I should be able to access my files
 * I should have a way to save settings and share them with my team mates
+* I should be able to do this from linux/windows/mac
+
+## Approaches
+* docker containers with gui apps
+* vagrant vm with desktop
+
+### Vagrant vm with desktop strong points
+
+### Vagrant vm with desktop strong pitfalls
 
 
+## Next steps / Ideas
+* make a vagrant box with stuff already installed
 
-# todo
+## TODO
 * have a desktop environment with vagrant
 * provision steps
 ** system setup
 ** dotfiles
 ** apps
 
-# fix
-* login automatically
+## FIXME
+* login automatically -> start once
 * remove duplication in Vagrantfile
 
 
-# ideas
-* make a vagrant box with stuff already installed
-
-
-# advantages
-* runs on any win/mac/linux
 
 ## Interesting links
 
