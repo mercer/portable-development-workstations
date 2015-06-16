@@ -1,20 +1,15 @@
-# portable-development-workstations
+# Portable Development Workstations
 
+## Why?
 
-Requirements
---------------
-I should be able to restore my dev environment withing 5 minutes
-I should have a similar ux with a containerized app as with the native app
-I should be able to access my files
-My settings should be kept
+Because a developer shouldn't need hours to set up their development machines.
 
-https://github.com/docker/docker/issues/8710
-http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
+## Requirements
+* I should be able to restore my dev environment withing 5 minutes
+* I should have a similar ux with a containerized app as with the native app
+* I should be able to access my files
+* I should have a way to save settings and share them with my team mates
 
-docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox
-
-https://stackoverflow.com/questions/18878117/using-vagrant-to-run-virtual-machines-with-desktop-environment
-http://portalstack.blogspot.be/2013/11/vagrant-virtualbox-ubuntu-for-linux.html
 
 
 # todo
@@ -46,3 +41,9 @@ http://portalstack.blogspot.be/2013/11/vagrant-virtualbox-ubuntu-for-linux.html
 *   [Boxstarter to setup Windows](http://boxstarter.org/)
 *   [osxc to setup Macs using ansible](http://osxc.github.io/)
 * [boxen for OS X](https://github.com/cegeka/portable-development-workstations)
+
+## Other various links
+* https://github.com/docker/docker/issues/8710
+* http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
+* https://stackoverflow.com/questions/18878117/using-vagrant-to-run-virtual-machines-with-desktop-environment
+* http://portalstack.blogspot.be/2013/11/vagrant-virtualbox-ubuntu-for-linux.html

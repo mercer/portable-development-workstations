@@ -18,22 +18,10 @@ Vagrant.configure(2) do |config|
       vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
     end
 
-    gnome.vm.provision "shell", inline: <<-SHELL
+    gnome.vm.provision :shell,
+      :args => "",
+      :path => "provision.sh"
 
-#deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-updates main restricted universe multiverse
-#deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-backports main restricted universe multiverse
-#deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-security main restricted universe multiverse    
-      #echo "deb mirror://mirrors.ubuntu.com/mirrors.txt vivid main restricted universe multiverse" | cat - file | tee file
-      apt-get update
-      #DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade --yes
-      apt-get install -y ubuntu-gnome-desktop virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
-      VBoxClient --clipboard
-      VBoxClient --draganddrop
-      VBoxClient --seamless
-      VBoxClient --display
-      VBoxClient --checkhostversion
-      sed -i 's/allowed_users=console/allowed_users=anybody/' /etc/X11/Xwrapper.config
-    SHELL
   end
 
 end
