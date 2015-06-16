@@ -3,7 +3,8 @@
 
 Vagrant.configure(2) do |config|
   config.vm.box = "mercer/vivid64-gnome"
-  config.vm.box_version >= 0.1.0
+  config.vm.box_version = "0.1.0"
+  config.vm.boot_timeout = "400"
 
   config.vm.define "gnome", primary: true do |gnome|
     gnome.vm.provider "virtualbox" do |vb|
