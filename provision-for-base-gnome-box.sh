@@ -24,6 +24,8 @@ VBoxClient --seamless
 VBoxClient --display
 VBoxClient --checkhostversion
 
-apt-get install ubuntu-gnome-desktop virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 --yes
+apt-get install ubuntu-gnome-desktop --yes
+
+apt-get install linux-headers-generic build-essential dkms --yes
 
 sed -i 's/allowed_users=console/allowed_users=anybody/' /etc/X11/Xwrapper.config

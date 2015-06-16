@@ -13,12 +13,15 @@ Because a developer shouldn't need hours to set up their development machines.
 
 ## Approaches
 * docker containers with gui apps
-* vagrant vm with desktop
+* vagrant vm with desktop and a base image made out of it
 
 ### Vagrant vm with desktop strong points
+* version is fixed, and up to date (to the version of the box)
 
-### Vagrant vm with desktop strong pitfalls
+### Vagrant vm with desktop pitfalls
 
+### Base box
+https://atlas.hashicorp.com/mercer/boxes/vivid64-gnome
 
 ## Next steps / Ideas
 * make a vagrant box with stuff already installed

@@ -2,10 +2,9 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/vivid64"
+  config.vm.box = "mercer/vivid64-gnome"
+  config.vm.box_version >= 0.1.0
 
-  # xfce4
-  
   config.vm.define "gnome", primary: true do |gnome|
     gnome.vm.provider "virtualbox" do |vb|
       vb.gui = true
@@ -17,10 +16,6 @@ Vagrant.configure(2) do |config|
       vb.customize ["modifyvm", :id, "--vram", "128"]
       vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
     end
-
-    gnome.vm.provision :shell,
-      :args => "",
-      :path => "provision.sh"
 
   end
 
